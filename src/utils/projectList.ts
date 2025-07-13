@@ -8,9 +8,11 @@ import lostItemscover from '../assets/images/lostItemscover.jpeg';
 import nullcover from '../assets/images/nullcover.jpg';
 import stickynotescover from '../assets/images/stickynotescover.png';
 import scoresureCover from '../assets/images/scoresure.png';
+import masterclassCover from '../assets/images/masterclass.png';
 // import crowdfundingCover from '../assets/images/crowdfundingcover.png';
 
-export type Technology = 'Next.js' | 'TailwindCSS' | 'Material-UI' | 'Node.js' | 'MongoDB' | 'Context API' | 'Express' | 'TypeScript' | 'React' | 'Nest.js' | 'Fapshi' | 'Material UI' | 'Context' | 'JWT' | 'React Native' | 'Angular' | 'Bootstrap' | 'Python' | 'JavaScript' | 'C' | 'Java' | 'Dart' | 'MySQL' | 'PostgreSQL' | 'Firebase' | 'Git' | 'Docker' | 'Figma' | 'MUI-X' | 'React Native' | 'Native-Wind' | 'Scikit-learn' | 'Prisma' | 'FastAPI' | 'AI' | 'Solidity' | 'Ethereum' | 'MetaMask' | 'Thirdweb' | 'IPFS' | 'Blockchain' | 'DApp';
+export type Technology = 'Next.js' | 'TailwindCSS' | 'Material-UI' | 'Node.js' | 'MongoDB' | 'Context API' | 'Express' | 'TypeScript' | 'React' | 'Nest.js' | 'Fapshi' | 'Material UI' | 'Context' | 'JWT' | 'React Native' | 'Angular' | 'Bootstrap' | 'Python' | 'JavaScript' | 'C' | 'Java' | 'Dart' | 'MySQL' | 'PostgreSQL' | 'Firebase' | 'Git' | 'Docker' | 'Figma' | 'MUI-X' | 'React Native' | 'Native-Wind' | 'Scikit-learn' | 'Prisma' | 'FastAPI' | 'AI' | 'Solidity' | 'Ethereum' | 'MetaMask' | 'Thirdweb' | 'IPFS' | 'Blockchain' | 'DApp' |  'Campay'| 
+            'WebSockets'| 'Nodemailer' | 'SPA';
 
 export interface Project {
     id: string | number;
@@ -25,7 +27,7 @@ export interface Project {
         username: string;
         password: string;
     };
-    scope?: 'heavy' | 'normal' | 'light',
+    scope?: 'heavy' | 'medium' | 'light',
     accessibility?: 'private' | 'public';
 }
 
@@ -87,6 +89,52 @@ export const projects: Project[] = [
         accessibility: 'private'
     },
     {
+        id: 11,
+        title: 'AI-Powered Loan Eligibility System',
+        description:
+            'A full-stack web application designed to assess loan eligibility for unbanked individuals using AI-driven credit scoring. The system accepts socio-economic and demographic data from users and uses a trained logistic regression model to determine creditworthiness. Built with a React frontend and a FastAPI backend, the application includes features such as user authentication, profile management, scoring history tracking, and real-time loan predictions. It integrates PostgreSQL for structured data storage, Prisma for ORM, and TailwindCSS for a modern, responsive UI. The system is designed to improve over time by collecting scoring outcomes and repayment records for model retraining.',
+        technologies: ['React', 'TailwindCSS', 'FastAPI', 'Python', 'Scikit-learn', 'AI', 'PostgreSQL', 'Prisma'],
+        image: scoresureCover, // Replace with your cover image variable
+        githubUrl: 'https://github.com/Mewoabi/AI_loan_eligibility_platform', // Update with actual repo URL if available
+        liveUrl: 'https://ai-loan-eligibility-platform.onrender.com/', // Add if deployed
+        category: 'Fullstack Web Application',
+        scope: 'heavy',
+        // accessibility: 'private' // Optional
+        credentials: {
+            username: 'enow@gmail.com',
+            password: 'doremi'
+        },
+    },
+    {
+        id: 12,
+        title: 'Blockchain Crowdfunding Platform',
+        description:
+            'A decentralized crowdfunding platform built using Ethereum, Solidity, and React. Users authenticate via MetaMask and can create, manage, or contribute to campaigns. The platform allows users to post updates, track donations, and withdraw funds based on backer voting. Campaign data is stored securely and transparently on the Ethereum blockchain, and IPFS is used for decentralized image uploads. The app includes a user dashboard, campaign exploration, update tracking, and full transaction support via Thirdweb SDK.',
+        technologies: ['React', 'Solidity', 'Ethereum', 'MetaMask', 'Thirdweb', 'IPFS', 'Blockchain', 'DApp'],
+        image: nullcover, // Replace with your cover image reference
+        githubUrl: 'https://github.com/Mewoabi/Blockchain_Crowdfunding', // replace with actual repo
+        // liveUrl: 'https://blockchain-crowdfund-app.vercel.app/', // replace with your live link
+        category: 'Fullstack DApp',
+        scope: 'heavy',
+        accessibility: 'public'
+    },
+    {
+        id: 13,
+        title: 'Content Creation Masterclass Platform',
+        description:
+            'A single-page web application designed to market and manage a YouTube monetization masterclass. Built with React and Firebase, it features Google and email/password authentication, mobile money payments via Campay, real-time updates via WebSockets, and transactional email automation using Nodemailer. The backend (Node.js + TypeScript) handles webhook events and securely communicates payment confirmations to the frontend.',
+        technologies: [
+            'React', 'TypeScript', 'Firebase', 'Node.js', 'Campay', 
+            'WebSockets', 'Nodemailer', 'TailwindCSS', 'SPA'
+        ],
+        image: masterclassCover, // Replace with actual image import or reference
+        // githubUrl: 'https://github.com/Mewoabi/content-masterclass-platform', // replace with actual repo
+        liveUrl: 'https://www.awesomelalpdy.com', // replace with live site if available
+        category: 'Fullstack Web App',
+        scope: 'medium',
+        accessibility: 'public'
+    },
+    {
         id: 5,
         title: 'Advanced Tech Computer Center Website',
         description:
@@ -96,7 +144,7 @@ export const projects: Project[] = [
         githubUrl: 'https://github.com/Mewoabi/tech-company-website',
         liveUrl: 'https://tech-company-website-0osa.onrender.com',
         category: 'Frontend Website',
-        scope: 'normal'
+        scope: 'medium'
     },
     {
         id: 6,
@@ -107,7 +155,7 @@ export const projects: Project[] = [
         image: digisolcover,
         liveUrl: 'https://digisol-group-website-la1o120sc.vercel.app/',
         category: 'Frontend Website',
-        scope: 'normal',
+        scope: 'medium',
         accessibility: 'private'
     },
     {
@@ -162,35 +210,5 @@ export const projects: Project[] = [
         scope: 'light',
         // accessibility: 'private'
     },
-    {
-        id: 11,
-        title: 'AI-Powered Loan Eligibility System',
-        description:
-            'A full-stack web application designed to assess loan eligibility for unbanked individuals using AI-driven credit scoring. The system accepts socio-economic and demographic data from users and uses a trained logistic regression model to determine creditworthiness. Built with a React frontend and a FastAPI backend, the application includes features such as user authentication, profile management, scoring history tracking, and real-time loan predictions. It integrates PostgreSQL for structured data storage, Prisma for ORM, and TailwindCSS for a modern, responsive UI. The system is designed to improve over time by collecting scoring outcomes and repayment records for model retraining.',
-        technologies: ['React', 'TailwindCSS', 'FastAPI', 'Python', 'Scikit-learn', 'AI', 'PostgreSQL', 'Prisma'],
-        image: scoresureCover, // Replace with your cover image variable
-        githubUrl: 'https://github.com/Mewoabi/AI_loan_eligibility_platform', // Update with actual repo URL if available
-        liveUrl: 'https://ai-loan-eligibility-platform.onrender.com/', // Add if deployed
-        category: 'Fullstack Web Application',
-        scope: 'heavy',
-        // accessibility: 'private' // Optional
-        credentials: {
-            username: 'enow@gmail.com',
-            password: 'doremi'
-        },
-    },
-        {
-            id: 12,
-            title: 'Blockchain Crowdfunding Platform',
-            description:
-              'A decentralized crowdfunding platform built using Ethereum, Solidity, and React. Users authenticate via MetaMask and can create, manage, or contribute to campaigns. The platform allows users to post updates, track donations, and withdraw funds based on backer voting. Campaign data is stored securely and transparently on the Ethereum blockchain, and IPFS is used for decentralized image uploads. The app includes a user dashboard, campaign exploration, update tracking, and full transaction support via Thirdweb SDK.',
-            technologies: ['React', 'Solidity', 'Ethereum', 'MetaMask', 'Thirdweb', 'IPFS', 'Blockchain', 'DApp'],
-            image: nullcover, // Replace with your cover image reference
-            githubUrl: 'https://github.com/Mewoabi/Blockchain_Crowdfunding', // replace with actual repo
-            // liveUrl: 'https://blockchain-crowdfund-app.vercel.app/', // replace with your live link
-            category: 'Fullstack DApp',
-            scope: 'heavy',
-            accessibility: 'public'
-          }          
     // Add more projects here
 ];

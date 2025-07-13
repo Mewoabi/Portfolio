@@ -70,7 +70,7 @@ export default function Projects() {
 					/>
 
 					<div className="flex flex-wrap gap-2">
-						{allTechnologies.map((tech) => (
+						{allTechnologies.sort((a, b) => a.localeCompare(b)).map((tech) => (
 							<Button
 								key={tech}
 								variant={selectedTech.includes(tech) ? 'primary' : 'outline'}

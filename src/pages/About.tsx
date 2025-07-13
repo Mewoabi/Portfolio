@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { Animate, AnimateList, AnimateListItem } from '../components/ui/Animate';
-import { Code, Palette, Terminal, Server, Database, Wrench } from 'lucide-react';
+import { Code, Palette, Terminal, Server, Database, Wrench, Link } from 'lucide-react';
 import SEO from '../components/SEO';
 
 const skills = [
@@ -33,6 +33,10 @@ const skills = [
 		category: 'Tools', 
 		icon: Wrench,
 		items: ['Git', 'Docker', 'Figma'] 
+	},	{ 
+		category: 'Blockchain', 
+		icon: Link,
+		items: ['Ethereum', 'Solidity', 'MetaMask', 'Thirdweb', 'IPFS', 'Blockchain', 'DApp'] 
 	},
 ];
 
@@ -126,7 +130,7 @@ export default function About() {
 												{skillGroup.items.map((skill) => (
 													<motion.span
 														key={skill}
-														className="px-3 py-1 bg-gray-50 dark:bg-gray-800 text-gray-800 dark:text-gray-200 border border-gray-200 dark:border-gray-700 rounded-full text-sm transition-colors"
+														className="px-3 py-1 bg-gray-50  dark:bg-gray-800 text-gray-800 dark:text-gray-200 border border-gray-200 dark:border-gray-700 rounded-full text-sm transition-colors"
 														whileHover={{ scale: 1.05, backgroundColor: "rgba(var(--color-primary-500), 0.1)" }}
 														whileTap={{ scale: 0.95 }}
 													>
