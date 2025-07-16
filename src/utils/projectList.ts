@@ -9,7 +9,7 @@ import nullcover from '../assets/images/nullcover.jpg';
 import stickynotescover from '../assets/images/stickynotescover.png';
 import scoresureCover from '../assets/images/scoresure.png';
 import masterclassCover from '../assets/images/masterclass.png';
-// import crowdfundingCover from '../assets/images/crowdfundingcover.png';
+import crowdfundingCover from '../assets/images/crowdfundingCover.png';
 
 export type Technology = 'Next.js' | 'TailwindCSS' | 'Material-UI' | 'Node.js' | 'MongoDB' | 'Context API' | 'Express' | 'TypeScript' | 'React' | 'Nest.js' | 'Fapshi' | 'Material UI' | 'Context' | 'JWT' | 'React Native' | 'Angular' | 'Bootstrap' | 'Python' | 'JavaScript' | 'C' | 'Java' | 'Dart' | 'MySQL' | 'PostgreSQL' | 'Firebase' | 'Git' | 'Docker' | 'Figma' | 'MUI-X' | 'React Native' | 'Native-Wind' | 'Scikit-learn' | 'Prisma' | 'FastAPI' | 'AI' | 'Solidity' | 'Ethereum' | 'MetaMask' | 'Thirdweb' | 'IPFS' | 'Blockchain' | 'DApp' |  'Campay'| 
             'WebSockets'| 'Nodemailer' | 'SPA';
@@ -111,9 +111,9 @@ export const projects: Project[] = [
         description:
             'A decentralized crowdfunding platform built using Ethereum, Solidity, and React. Users authenticate via MetaMask and can create, manage, or contribute to campaigns. The platform allows users to post updates, track donations, and withdraw funds based on backer voting. Campaign data is stored securely and transparently on the Ethereum blockchain, and IPFS is used for decentralized image uploads. The app includes a user dashboard, campaign exploration, update tracking, and full transaction support via Thirdweb SDK.',
         technologies: ['React', 'Solidity', 'Ethereum', 'MetaMask', 'Thirdweb', 'IPFS', 'Blockchain', 'DApp'],
-        image: nullcover, // Replace with your cover image reference
+        image: crowdfundingCover, // Replace with your cover image reference
         githubUrl: 'https://github.com/Mewoabi/Blockchain_Crowdfunding', // replace with actual repo
-        // liveUrl: 'https://blockchain-crowdfund-app.vercel.app/', // replace with your live link
+        liveUrl: 'https://blockchain-crowdfunding-omd6.onrender.com/', // replace with your live link
         category: 'Fullstack DApp',
         scope: 'heavy',
         accessibility: 'public'
