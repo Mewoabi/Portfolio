@@ -1,4 +1,4 @@
-import { ArrowRight, Github, Linkedin, Twitter } from 'lucide-react';
+import { ArrowRight, Github, Linkedin } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { Button } from '../components/ui/Button';
 import { Animate, AnimateList, AnimateListItem } from '../components/ui/Animate';
