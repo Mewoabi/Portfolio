@@ -10,19 +10,19 @@ import profileImage from '../assets/profile_backgroundless.png';
 const socialLinks = [
   {
     name: 'GitHub',
-    url: 'https://github.com/mewoabi-dore',
+    url: 'https://github.com/mewoabi',
     icon: Github
   },
   {
     name: 'LinkedIn',
-    url: 'https://linkedin.com/in/mewoabi-dore',
+    url: 'https://www.linkedin.com/in/mewoabi-dore-5248b1278/',
     icon: Linkedin
   },
-  {
-    name: 'Twitter',
-    url: 'https://twitter.com/mewoabi_dore',
-    icon: Twitter
-  }
+  // {
+  //   name: 'Twitter',
+  //   url: 'https://twitter.com/mewoabi_dore',
+  //   icon: Twitter
+  // }
 ];
 
 const highlights = [
